@@ -18,12 +18,24 @@ public class Prog58b {
         double c = input.nextDouble();
         System.out.println();
 
-        double pos = (-b + Math.sqrt(Math.pow(b, 2) -4 * a * c)/(2 * a));
-        
-        double neg = (-b - Math.sqrt(Math.pow(b, 2) -4 * a * c)/(2 * a));
+        double pos = (-b + Math.sqrt(Math.pow(b, 2) -4 * (a * c)))/(2 * a);
+        double neg = (-b - Math.sqrt(Math.pow(b, 2) -4 * (a * c)))/(2 * a);
 
-        System.out.printf("The Roots are: " + pos + neg);
+        System.out.printf("The Roots are: \n" + pos);
+        System.out.printf(" \n" + neg);
 
     }
     
 }
+
+/*
+Enter A: 1
+
+Enter B: 5
+
+Enter C: 6
+
+The Roots are:
+-2.0
+-3.0
+ */
