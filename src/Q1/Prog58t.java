@@ -15,20 +15,19 @@ public class Prog58t {
         System.out.println();
 
         double c = r - p;
-        System.out.printf("Change Due $%.2f\n",c); // Due
+        System.out.printf("Change Due $%.2f\n", c); // Due
         System.out.println();
 
-        double d = 1.00;
+        double d = Math.floor(c);
         double q = 0.25;
         double di = 0.10;
         double n = 0.05;
         double pe = 0.01;
 
+        System.out.printf("Dollars: " + d);
 
-
-
-
-
+        double df = Math.floor(c / q);
+        System.out.printf("\n Quarters: \n" + df);
 
 
 
