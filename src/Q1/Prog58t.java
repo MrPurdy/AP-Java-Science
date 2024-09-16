@@ -1,5 +1,5 @@
 package Q1;
-
+import java.util.*;
 import java.util.Scanner;
 
 public class Prog58t {
@@ -15,19 +15,24 @@ public class Prog58t {
         System.out.println();
 
         double c = r - p;
-        System.out.printf("Change Due $%.2f\n", c); // Due
+        System.out.printf("Change Due $ %.2f\n", c); // Due
         System.out.println();
 
         double d = Math.floor(c);
-        double q = 0.25;
-        double di = 0.10;
-        double n = 0.05;
-        double pe = 0.01;
+        double q = (c - d - 0.25) / 0.25;
+        double di = (c - d - 0.25 - 0.10 - 0.10 - 0.10) / 0.10;
+        double n = (c - d - 0.25 - 0.10 - 0.10 - 0.10 - 0.05 - 0.05) / 0.05;
+        double pe = (c - d - 0.25 - 0.10 - 0.10 - 0.10 - 0.05 - 0.05) / 0.01;
 
-        System.out.printf("Dollars: " + d);
+        System.out.printf("Dollars: \n" + d);
 
-        double df = Math.floor(c / q);
-        System.out.printf("\n Quarters: \n" + df);
+        System.out.printf("\nQuarters: %.0f",  q);
+
+        System.out.printf("\nDimes: %.0f",  di);
+
+        System.out.printf("\nNickles: %.0f",  n);
+
+        System.out.printf("\nPennies: %.0f",  pe);
 
 
 
