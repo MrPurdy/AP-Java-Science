@@ -39,3 +39,11 @@ public class Prog58t {
 
     }
 }
+/*
+Dollars:
+14.0
+Quarters: 2
+Dimes: 1
+Nickles: 1
+Pennies: 3
+ */
