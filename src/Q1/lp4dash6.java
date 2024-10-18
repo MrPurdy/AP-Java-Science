@@ -5,8 +5,6 @@ import java.util.Scanner;
 public class lp4dash6 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int num1 = input.nextInt();
-
         int min = 0;
         int max = 10;
         int range = max - min + 1;
@@ -18,6 +16,22 @@ public class lp4dash6 {
         for (int i = 0; i < 10; i ++) {
             rnum2 = (int)(Math.random() * range) + min;
         }
-        System.out.println(rnum1 + "\t" + rnum2);
+        int min2 = 1;
+        int max2 = 4;
+        int operator = 0;
+        for (int i = 1; i < 4; i ++) {
+            operator = (int)(Math.random() * range) + min;
+        }
+        if (operator == 1) {
+            System.out.print("+");
+        } else if (operator == 2) {
+            System.out.print("-");
+        } else if (operator == 3) {
+            System.out.print("*");
+        } else if (operator == 4) {
+            System.out.print("/");
+        }
+        System.out.println("What is " + rnum1 + "\t" + operator  + "\t" + rnum2 );
     }
 }
+
