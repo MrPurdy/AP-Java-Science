@@ -19,8 +19,7 @@ public class Prog54b {
         int num4 = keyboard.nextInt();
 
         int sum = num1 + num2 + num3 + num4;
-        System.out.print("The sum of the four numbers is  " +
-                "" + sum);
+        System.out.print("The sum of the four numbers is  " + "" + sum);
 
 
         double ave = sum / (double)4;

@@ -17,4 +17,11 @@ public class Cl54c {
          myArea = myPI * myRad * myRad;
          myCir = 2.0 * myPI * myRad;
     }
+
+    public double getArea() {
+        return myArea;
+    }
+    public double getCir() {
+        return myCir;
+    }
 }
