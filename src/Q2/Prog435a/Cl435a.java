@@ -40,4 +40,11 @@ public class Cl435a {
         public void calc() {
                 myCost = tollnum[myToll - 1] * carnum[myCar - 1];
         }
+
+        public String toString() {
+                return cartype[myCar - 1] + "$" +
+                        carnum[myCar - 1] + "$" +
+                        tollnum[myToll - 1] + "$" +
+                        myCost;
+        }
 }
