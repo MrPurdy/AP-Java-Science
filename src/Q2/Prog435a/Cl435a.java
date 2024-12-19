@@ -6,9 +6,7 @@ public class Cl435a {
         private double myCost;
         private double[] tollnum = new double[8];
         private double[] carnum = new double[6];
-        private String[] cartype = new String[7];
-
-
+        private String[] cartype = new String[6];
 
         public Cl435a(int Car, int Toll) {
                 myCar = Car;
@@ -42,9 +40,9 @@ public class Cl435a {
         }
 
         public String toString() {
-                return cartype[myCar - 1] + "$" +
-                        carnum[myCar - 1] + "$" +
-                        tollnum[myToll - 1] + "$" +
-                        myCost;
+                return cartype[myCar - 1] + "$"
+                        + carnum[myCar - 1] + "$"
+                        + tollnum[myToll - 1] + "$"
+                        + myCost;
         }
 }
